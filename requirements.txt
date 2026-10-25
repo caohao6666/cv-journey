@@ -1,0 +1,12 @@
+# cv-journey 环境（2026-10-24 实测版本）
+# 注意：torch 的 +cu130 版本不在普通 PyPI，安装用：
+#   pip install torch==2.14.1+cu130 torchvision==0.29.1+cu130 \
+#       --index-url https://download.pytorch.org/whl/cu130
+# 国内慢时可先到 https://mirror.sjtu.edu.cn/pytorch-wheels/cu130/ 下载 whl 再本地安装。
+torch==2.14.1+cu130
+torchvision==0.29.1+cu130
+ultralytics==8.4.187
+opencv-python==4.11.0
+numpy==1.26.4
+matplotlib==3.11.2
+ipykernel==7.4.0

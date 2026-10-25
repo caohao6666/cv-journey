@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# 模型权重（大文件，按需下载）
+*.pt
+*.onnx
+*.engine
+*.pth
+*.safetensors
+
+# 运行输出
+runs/
+datasets/
+wandb/
+*.log
+
+# 环境
+.venv/
+venv/
+.env
+
+# 系统/IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
