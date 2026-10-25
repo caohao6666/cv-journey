@@ -12,6 +12,7 @@ __pycache__/
 
 # 运行输出
 runs/
+outputs/
 datasets/
 wandb/
 *.log

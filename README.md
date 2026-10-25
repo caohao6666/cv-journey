@@ -10,6 +10,17 @@ cv-journey/
 │   ├── check_env.py  # 一键自检：Python / CUDA / 依赖 / 网络
 │   ├── yolo_demo.py  # 最小可跑推理：YOLO11n 检测一张图
 │   └── bus.jpg       # 示例图片
+├── week1/            # 第 1 周：图像基础 + OpenCV
+│   ├── README.md     # 本周说明与做题顺序
+│   ├── generate_assets.py  # 生成测试图（shapes.png）
+│   ├── ex1_read_image.py   # 练习1：读图/属性/resize（完整示例）
+│   ├── ex2_color_spaces.py # 练习2：灰度 + HSV
+│   ├── ex3_pixel_roi.py    # 练习3：切片 ROI + 画框
+│   ├── ex4_filters_edges.py# 练习4：高斯模糊 + Canny
+│   ├── ex5_batch_tool.py   # 练习5：批量 resize 小工具
+│   ├── check.py      # 一键验收：python week1\check.py
+│   ├── assets/       # 练习用图
+│   └── outputs/      # 练习输出（不提交 git）
 ├── yolo11n.pt        # YOLO11n 预训练权重（5.5 MB）
 ├── runs/             # 推理/训练输出（不提交 git）
 └── requirements.txt  # 依赖版本记录
@@ -35,12 +46,15 @@ cv-journey/
 ## 快速开始
 
 ```powershell
-python week0\check_env.py          # 环境自检
+python week0\check_env.py                 # 环境自检
 python week0\yolo_demo.py week0\bus.jpg   # 跑一次检测，结果在 runs/
+
+python week1\generate_assets.py           # 生成第 1 周测试图（只需一次）
+python week1\check.py                     # 第 1 周验收：看还有哪几题没做完
 ```
 
-## 下一步
+## 进度
 
-1. 配置 git 身份并做第一次提交（见《第0周-环境验收报告.md》）。
-2. 在 GitHub 建远程仓库 `cv-journey` 并 push。
-3. 进入第 1 周：图像基础 + OpenCV。
+- [x] 第 0 周：环境搭建 + YOLO 跑通 + GitHub 仓库推送（2026-10-24）
+- [ ] 第 1 周：图像基础 + OpenCV（练习 1~5，见 [week1/README.md](week1/README.md)）
+- [ ] 第 2 周：传统机器视觉与几何
